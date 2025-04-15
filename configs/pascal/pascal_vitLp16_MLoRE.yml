@@ -1,0 +1,62 @@
+# Setup
+version_name: TaskDiffusion_vitL_pascal_MLoRE
+out_dir: "."
+
+# Database
+train_db_name: PASCALContext
+val_db_name: PASCALContext
+trBatch: 4 # Should be trained with single gpu
+valBatch: 6
+nworkers: 10
+ignore_index: 255
+seed: 666
+
+# Optimizer and scheduler
+intermediate_supervision: False
+val_interval: 8000
+epochs: 999999
+max_iter: 40000
+optimizer: adam
+optimizer_kwargs:
+   lr: 0.00002
+   weight_decay: 0.000001
+scheduler: poly
+grad_clip_param: {'max_norm': 10, 'norm_type': 2}
+
+# Model
+model: TaskDiffusion_mlore
+backbone: TaskDiffusion_vitL
+head: TaskDiffusion_mlore_head
+final_embed_dim: 452
+timesteps: 3
+randsteps: 1
+module_layer: 3
+with_aux: True
+aux_weight: 1.0
+rank_list: [16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128]
+topk: 3
+spatial_size: 1024
+pseudo_start: 40000
+
+# Tasks
+task_dictionary:
+   include_semseg: True
+   include_human_parts: True
+   include_sal: True
+   include_edge: True
+   include_normals: True
+   edge_w: 0.95
+
+# bits scale
+bit_scales:
+   all: 0.01
+
+# Loss kwargs
+loss_kwargs:
+   loss_weights:
+       semseg: 1.0
+       human_parts: 2.0
+       sal: 5.0
+       edge: 50.0
+       normals: 10.0
+       load_balancing: 0.0003
