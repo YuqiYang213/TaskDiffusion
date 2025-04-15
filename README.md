@@ -11,9 +11,9 @@ We provide the code for TaskDiffusion, a novel multi-task dense prediction frame
 - To further unlock the potential of diffusion models in solving multi-task dense predictions, TaskDiffusion introduces a novel joint denoising diffusion process to capture the task relations during denoising.
 - Our proposed TaskDiffusion achieves a new state-of-the-art (SOTA) performance with superior efficiency on PASCAL-Context and NYUD-v2. 
 
-Please check the [paper](**Needed**) for more details.
+Please check the [paper](https://openreview.net/pdf?id=TzdTRC85SQ) for more details.
 <p align="center">
-  <img alt="img-name" src="imgs/pipeline1.png" width="800">
+  <img alt="img-name" src="imgs/pipeline.png" width="800">
   <br>
     <em>Framework overview of the proposed TaskDiffusion for multi-task scene understanding.</em>
 </p>
@@ -84,11 +84,11 @@ We provide the pretrained models on PASCAL-Context and NYUD-v2.
 ### Download pre-trained models
 |Version | Dataset | Download | Depth (RMSE) | Segmentation (mIoU) |  Human parsing (mIoU) | Saliency (maxF) | Normals (mErr) | Boundary (odsF) | 
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| TaskDiffusion (ViT-L)| PASCAL-Context | [Google](**Needed**) | - |81.21 | 69.62 | 84.94 | 13.55 | 74.89 |
-| TaskDiffusion /w MLoRE (ViT-L)| PASCAL-Context | [Google](**Needed**) | - |81.58 |  71.30 | 85.05 | 13.43 | 76.07 |
-| TaskDiffusion (ViT-B)| PASCAL-Context | [Google](**Needed**) | - | 78.83 | 67.40 | 85.31 | 13.38 | 74.68 |
-| TaskDiffusion (ViT-L) | NYUD-v2 | [Google](**Needed**) | 0.5020 | 55.65  | - | - | 18.43 | 78.64 |
-| TaskDiffusion /w MLoRE (ViT-L) | NYUD-v2 | [Google](**Needed**) | 0.5033 | 56.66  | - | - | 18.13 | 78.89 |
+| TaskDiffusion (ViT-L)| PASCAL-Context | [Link](https://pan.baidu.com/s/1Eed7wipnllbZ5LIvehH30A?pwd=j9u5) (Extraction code: j9u5) | - |81.21 | 69.62 | 84.94 | 13.55 | 74.89 |
+| TaskDiffusion /w MLoRE (ViT-L)| PASCAL-Context | [Link](https://pan.baidu.com/s/1Ir5SSCNQqDtvw7ZDm5SbnA?pwd=gwhp) (Extraction code: gwhp) | - |81.58 |  71.30 | 85.05 | 13.43 | 76.07 |
+| TaskDiffusion (ViT-B)| PASCAL-Context | [Link](https://pan.baidu.com/s/1oXHTXj2B7T8hSC4FtOeaFQ?pwd=xidm) (Extraction code: xidm) | - | 78.83 | 67.40 | 85.31 | 13.38 | 74.68 |
+| TaskDiffusion (ViT-L) | NYUD-v2 | [Link](https://pan.baidu.com/s/1PrxvOiNtJ77AwB8vRAW0GA?pwd=ngfp) (Extraction code: ngfp) | 0.5020 | 55.65  | - | - | 18.43 | 78.64 |
+| TaskDiffusion /w MLoRE (ViT-L) | NYUD-v2 | [Link](https://pan.baidu.com/s/1Rh_0DVvmcxeTGdDRVyPl0w?pwd=fx2m) (Extraction code: fx2m) | 0.5033 | 56.66  | - | - | 18.13 | 78.89 |
 
 ### Infer with the pre-trained models
 To evaluate the pre-trained models, you can change the ```--trained_model MODEL_PATH``` in ```infer.sh``` to load the specified model.
@@ -98,7 +98,10 @@ To evaluate the pre-trained models, you can change the ```--trained_model MODEL_
 If you find our work helpful, please cite:
 BibTex:
 ```
-@inproceedings{**Needed**
+@inproceedings{yangmulti,
+  title={Multi-Task Dense Predictions via Unleashing the Power of Diffusion},
+  author={Yang, Yuqi and Jiang, Peng-Tao and Hou, Qibin and Zhang, Hao and Chen, Jinwei and Li, Bo},
+  booktitle={The Thirteenth International Conference on Learning Representations}
 }
 ```
 
