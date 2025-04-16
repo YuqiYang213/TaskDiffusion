@@ -1,5 +1,5 @@
-# Rewritten based on MTI-Net by Hanrong Ye
-# Original authors: Simon Vandenhende
+# Rewritten based on TaskPrompter by Yuqi Yang
+# Original authors: Simon Vandenhende Hanrong Ye
 # Licensed under the CC BY-NC 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/)
 
 

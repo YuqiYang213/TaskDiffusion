@@ -1,4 +1,4 @@
-# By Hanrong Ye for TaskPrompter
+# By Yuqi Yang for TaskPrompter
 # Licensed under the CC BY-NC 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/)
 # Based on Vision Transformer (ViT) in PyTorch by Ross Wightman
 

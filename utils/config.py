@@ -1,4 +1,4 @@
-# By Hanrong Ye
+# By Yuqi Yang
 
 # This code is referenced from 
 # https://github.com/facebookresearch/astmt/

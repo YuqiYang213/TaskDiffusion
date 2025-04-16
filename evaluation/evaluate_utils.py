@@ -1,4 +1,4 @@
-# Hanrong Ye
+# Yuqi Yang
 
 import os
 import cv2

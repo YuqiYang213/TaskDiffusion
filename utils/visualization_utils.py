@@ -1,4 +1,4 @@
-# By Hanrong Ye
+# By Yuqi Yang
 # Licensed under the CC BY-NC 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/)
 
 import matplotlib.pyplot as plt
